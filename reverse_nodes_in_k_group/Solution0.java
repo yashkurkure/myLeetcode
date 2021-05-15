@@ -6,8 +6,8 @@
  *                  the list to be reversed. If there are it makes a call to reverse() which returns 
  *                  a reversed list, then we make a recursive call to process rest of the list. 
  *                  
- *                  If 'k' nodes are not avaialable then we go the the base case and append return 
- *                  the ramining list.
+ *                  If 'k' nodes are not avaialable then we go the the base case and return 
+ *                  the ramining list, which will then the appended in the previous stack frame.
  * 
  * 
  * 
