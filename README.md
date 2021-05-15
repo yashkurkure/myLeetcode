@@ -9,12 +9,10 @@ There are many different approaches to one problem, not all are efficient and fa
 
 Feel free to use the Quick links table below to jump right to the solutions and the questions.
 
-```
-# You might want to manually open the links in new tabs. 
-```
-
 
 ## Quick Links
+
+You might want to manually open the links in new tabs. 
 
 | Sr.no<br>(On leetcode) | Question Link | My solution(s) | Leetcode Level |
 | --- | --- | --- | --- |
