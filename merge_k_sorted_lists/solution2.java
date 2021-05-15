@@ -57,6 +57,8 @@ class Solution
      * This function takes two sorted lists and returns a merged sorted list
      * 
      * Tail recursive
+     * (Although java doesnt have tail recursive optimization, stating this as an optimization useful in 
+     * other languages like C++)
      */
     public ListNode mergeTwo(ListNode n1, ListNode n2)
     {
