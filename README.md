@@ -1,9 +1,11 @@
 # myLeetcode
 
-Hello! 
-These are my solutions to leetcode problems.
-There are many different approaches to one problem, not all are efficient and fast but its worth thinking about them for practice.
-Each prolem folder has all the solutions I could cmoe up with for each problem.
+Hello!<br>
+These are my solutions to leetcode problems.<br>
+Each problem folder has all the solutions I could come up with.<br>
+<br>
+There are many different approaches to one problem, not all are efficient and fast, but it is worth thinking about them for practice.<br>
+
 
 Feel free to use the Quick links table below to jump right to the solutions and the questions.
 
