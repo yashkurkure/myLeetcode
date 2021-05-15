@@ -16,4 +16,5 @@ You might want to manually open the links in new tabs.
 
 | Sr.no<br>(On leetcode) | Question Link | My solution(s) | Leetcode Level |
 | --- | --- | --- | --- |
-| 23. | [Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/) | [Solution1: Iterative](https://github.com/yashkurkure/myLeetcode/blob/main/merge_k_sorted_lists/solution0.java)<br>[Solution2: Recursive](https://github.com/yashkurkure/myLeetcode/blob/main/merge_k_sorted_lists/solution1.java)<br>[Solution 3: Recursive with Divide and Conquer](https://github.com/yashkurkure/myLeetcode/blob/main/merge_k_sorted_lists/solution2.java)| HARD |
+| 23. | [Merge k sorted lists](https://leetcode.com/problems/merge-k-sorted-lists/) | [Solution1: Iterative](https://github.com/yashkurkure/myLeetcode/blob/main/merge_k_sorted_lists/solution0.java)<br>[Solution2: Recursive](https://github.com/yashkurkure/myLeetcode/blob/main/merge_k_sorted_lists/solution1.java)<br>[Solution 3: Recursive with Divide and Conquer](https://github.com/yashkurkure/myLeetcode/blob/main/merge_k_sorted_lists/solution2.java)| HARD |
+| 25. | [Reverse nodes in k group](https://leetcode.com/problems/merge-k-sorted-lists/) | [Solution1: Recursion](https://github.com/yashkurkure/myLeetcode/blob/main/reverse_nodes_in_k_group/Solution0.java)| HARD |
