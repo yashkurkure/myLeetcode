@@ -1,11 +1,14 @@
 /** 
- * Recursive Approach WITHOUT Divide and Conquer - tad bit faster than iterative
+ * Recursive Approach WITH Divide and Conquer - fastest I have written till now
+ * 
+ * The only differce between this and solution 1 is the mergeAll() function, here it uses divide and conquer.
  * 
  * Here I am using 2 recrusive function.
  * 
  * mergeTwo() ->  takes two sorted lists and merges them into one sorted list
  * mergeAll() -> takes an array of k sorted lists and returns a merged sorted list of the k lists
- *               mergeAll makes calls to mergeTwo to merge two lists at a time in each recursive call to mergeAll.
+ *               mergeAll makes calls to mergeTwo to merge two lists, but It does so by divide and conquer.
+ *               It will split the list[] at aprroximatley half every time.
  * 
  */
 
@@ -31,26 +34,23 @@ class Solution
     public ListNode mergeKLists(ListNode[] lists)
     {
         if(lists.length == 0) return null; //Return empty list if lists[] is empty
-        return mergeAll(null, lists, 0); //Recursive function to merge all lists
+        return mergeAll(lists, 0 , lists.length - 1); //Recursive function to merge all lists
     } 
 
     /**
-     * This is tail recursive but the depth of recursion gets to large
+     * In solution 1 I had a recursive function as well , but this one uses divide and conquer
      * 
+     * The runtime imporved siginificantly
      */
-    public ListNode mergeAll(ListNode mergedList, ListNode[] lists, int index)
+    public ListNode mergeAll(ListNode[] lists, int start, int end)
     {
-        //Base Case: If the index reached is the last index, merge the last list with mergedList and return it.
-        if(index == lists.length-1) 
-            return mergeTwo(mergedList, lists[index]);
-        
-        //Controll reaches here if base case is not ture
-        
-        //Compute as you go and Tail recursive
-
-        //Using the mergeTwo function we can merge two sorted lists
-        mergedList = mergeTwo(mergedList, lists[index]); //merge mergedList and the list at index
-        return mergeAll(mergedList, lists, index + 1); //make recursive call to merge next list
+        if(start == end) return lists[start];
+        else
+        {
+            //ListNode n1 = mergeAll(lists, start, ((start+end)/2));
+            //ListNode n2 = mergeAll(lists,((start+end)/2) + 1, end);
+            return mergeTwo(mergeAll(lists, start, ((start+end)/2)),mergeAll(lists,((start+end)/2) + 1, end));
+        }
     }
 
     /**
